@@ -1,0 +1,13 @@
+#!/usr/bin/gnuplot
+
+set term pngcairo dashed enhanced font "Verdana,14"
+set output "roc_curve.png"
+set grid
+set xtics .1
+set ytics .1
+set xlabel "False Positive Rate"
+set ylabel "True Positive Rate"
+set title "Wild Mask Database"
+set key right bottom
+plot \
+    "example/roc_values.txt" using 1:2 with lines title "Random",\
