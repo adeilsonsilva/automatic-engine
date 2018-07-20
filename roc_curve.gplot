@@ -11,3 +11,4 @@ set title "Wild Mask Database"
 set key right bottom
 plot \
     "example/roc_values.txt" using 1:2 with lines title "Random",\
+    "2D-ContAuth/roc_values.txt" using 1:2 with lines title "2D-ContAuth",\
